@@ -15,6 +15,18 @@ const onRequest = (request, response) => {
     case '/page2':
       htmlHandler.getPage2(request, response);
       break;
+    case '/time':
+      textHandler.getTime(request, response);
+      break;
+    case '/hello':
+      textHandler.getHello(request, response);
+      break;
+    case '/timeJSON':
+      jsonHandler.getTimeJSON(request, response);
+      break;
+    case '/helloJSON':
+      jsonHandler.getHelloJSON(request, response);
+      break;
     // can't you also have case '/' as a fallthrough here? idk
     default:
       htmlHandler.getIndex(request, response);
